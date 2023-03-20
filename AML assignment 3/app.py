@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 model = joblib.load('model.joblib')
 
-@app.route('/score', methods=['POST'])
+@app.route('/')
 def score_text():
     # Get the text input from the request body
-    text = request.json['text']
+    text = 'This is a test'
     
     # Use the score function to get the prediction and propensity
     prediction, propensity = score(text, model, threshold=0.5)
@@ -19,6 +19,10 @@ def score_text():
     
     # Return the response in JSON format
     return jsonify(response)
-
+ 
+# main driver function
 if __name__ == '__main__':
+ 
+    # run() method of Flask class runs the application
+    # on the local development server.
     app.run()
