@@ -1,0 +1,20 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.2, pytest-7.2.2, pluggy-1.0.0
+rootdir: C:\Users\asust\Downloads\Ass_3
+plugins: cov-4.0.0
+collected 3 items
+
+test_cover.py .....                                                      [100%]
+
+---------- coverage: platform win32, python 3.11.2-final-0 -----------
+Name            Stmts   Miss  Cover   Missing
+---------------------------------------------
+app.py             19     19     0%   1-34
+score.py            6      0   100%
+test.py      	   61      0   100%
+---------------------------------------------
+TOTAL              86     19    65%
+Coverage HTML written to dir htmlcov
+
+
+============================== 3 passed in 5.18s ==============================

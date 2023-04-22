@@ -1,0 +1,11 @@
+flask
+joblib
+numpy
+sklearn
+textblob
+scikit-learn
+pytest
+coverage
+
+
+
